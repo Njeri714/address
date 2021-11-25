@@ -3,6 +3,9 @@ function Contact(first, last){
     this.firstName = first;
     this.lastName = last;
 }
+Contact.prototype.fullName = function(){
+    returnthis.firstName + " " + this.lastName; 
+}
 
 // usser logic
 $(document).ready(function(){
@@ -13,7 +16,7 @@ $(document).ready(function(){
 
         let newContact = new Contact(inputtedFirstName, inputtedLastName);
 
-        $("ul#contacts").append("<li><span class = 'contact'>" + newContact.firstName + "</span></li>");
+        $("ul#contacts").append("<li><span id = 'contact'>" + newContact.firstName + "</span></li>");
 
         $("input#new-first-name").val("");
         $("input#new-last-name").val("");
