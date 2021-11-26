@@ -2,6 +2,7 @@
 function Contact(first, last){
     this.firstName = first;
     this.lastName = last;
+    this.address = [];
 }
 Contact.prototype.fullName = function(){
     returnthis.firstName + " " + this.lastName; 
