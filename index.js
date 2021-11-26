@@ -4,6 +4,12 @@ function Contact(first, last){
     this.lastName = last;
     this.address = [];
 }
+
+function address(street, city, county){
+    this.street = street;
+    this.city = city;
+    this.county;
+}
 Contact.prototype.fullName = function(){
     returnthis.firstName + " " + this.lastName; 
 }
